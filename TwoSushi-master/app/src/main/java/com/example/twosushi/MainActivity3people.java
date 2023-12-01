@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class MainActivity3people extends AppCompatActivity {
     private static final String TAG = "MyActivity3people";
     private EditText etTotalPrice1;
