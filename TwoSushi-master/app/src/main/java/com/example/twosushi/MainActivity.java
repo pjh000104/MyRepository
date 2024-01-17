@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
+        //Item price edit text
         etTotalPrice1.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 calculatePrice();
             }
         });
-
+        //Person 1 edit text
         etItem1Person1.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                 calculatePrice();
             }
         });
-
+        //person2 edit text
         etItem1Person2.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

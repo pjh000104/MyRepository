@@ -76,7 +76,7 @@ public class MainActivity3people extends AppCompatActivity {
                 etItem1Person3.setText(null);
                 tvPerson1CurrentAmount.setText("0");
                 tvPerson2CurrentAmount.setText("0");
-                tvPerson3TotalAmount.setText("0");
+                tvPerson3CurrentAmount.setText("0");
                 Toast myToast = Toast.makeText(MainActivity3people.this, "Added to total Amount!", Toast.LENGTH_SHORT);
                 myToast.show();
             }
@@ -166,8 +166,8 @@ public class MainActivity3people extends AppCompatActivity {
         });
     }
 
-    //Calculates the current amount for each person
-    public void calculatePrice() {
+    //Calculates the current amount for each person.
+        public void calculatePrice() {
         if(etTotalPrice1.getText().toString().matches("")) {
             tvPerson1CurrentAmount.setText(" ");
             tvPerson2CurrentAmount.setText(" ");
@@ -186,7 +186,7 @@ public class MainActivity3people extends AppCompatActivity {
             person2Amount = 0;
         }
         if(etItem1Person3.getText().toString().matches("")) {
-            person2Amount = 0;
+            person3Amount = 0;
         }
 
         if(person1Amount == 0 && person2Amount == 0 && person3Amount == 0) {
