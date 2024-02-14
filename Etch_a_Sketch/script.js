@@ -34,8 +34,9 @@ function makeGrid1() {
 function draw(color) {
    let gridBoxes = document.querySelectorAll('#gridBoxRow');
    for (let i = 0; i < gridSize*gridSize; i++) {
-      gridBoxes[i].addEventListener('mousedown', function() {
+      gridBoxes[i].addEventListener('mouseover', function() {
          gridBoxes[i].style.backgroundColor = color;
+         
       });
    }
 }
